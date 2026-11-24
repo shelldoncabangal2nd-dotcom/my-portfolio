@@ -8,20 +8,23 @@
 </head>
 <body>
 
-  <!-- STICKY NAVIGATION BAR (Links scroll smoothly to each section ID) -->
+  <!-- // 1. Navigation -->
   <nav id="top-nav">
-    <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About Me</a></li>
-      <li><a href="#hobbies">Hobbies</a></li>
-      <li><a href="#gallery">Gallery</a></li>
-      <li><a href="#favorites">Favorites</a></li>
-      <li><a href="#dreams">Dreams</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand">Shelldon.dev</a>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#hobbies">Hobbies</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#favorites">Favorites</a></li>
+        <li><a href="#dreams">Dreams</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- HERO HEADER -->
+  <!-- // 2. Main (Home / Hero) -->
   <header id="home">
     <div class="hero-content">
       <img id="profile-pic" src="images/profile01.jpg" alt="Shelldon Reygie B. Cabangal">
@@ -35,10 +38,9 @@
     </div>
   </header>
 
-  <!-- MAIN CONTENT -->
   <main>
 
-    <!-- SECTION 1: INTRODUCTION & FEATURED WORK -->
+    <!-- // 3. Welcome & Featured Work -->
     <section class="container">
       <p class="section-tag">01 • Welcome</p>
       <h2>Hello &amp; Welcome!</h2>
@@ -53,7 +55,7 @@
       </div>
 
       <h3>Featured Programming Work &amp; Credentials</h3>
-      <div class="card-grid">
+      <div class="card-grid two-col">
         <div class="card card-accent">
           <span class="pill">C# Project</span>
           <h3>TicTacToe (ITEC 102)</h3>
@@ -73,7 +75,7 @@
       </div>
     </section>
 
-    <!-- SECTION 2: ABOUT ME -->
+    <!-- // 4. About Me -->
     <section id="about" class="container">
       <p class="section-tag">02 • About Me</p>
       <h2>My Background &amp; Story</h2>
@@ -87,7 +89,7 @@
       </ul>
 
       <h3>Educational Background</h3>
-      <div class="card-grid">
+      <div class="card-grid two-col">
         <div class="card">
           <span class="pill">College • Present</span>
           <h3>LSPU - San Pablo City Campus</h3>
@@ -101,30 +103,36 @@
         </div>
       </div>
 
-      <h3 class="mt-20">Why Computer Science?</h3>
-      <p>
-        After graduating from the STEM strand at St. Nicolas Golden Field Academy Inc. (2024–2026), I chose Computer
-        Science for two practical reasons: the strong career opportunities and high earning potential in the tech
-        industry, and my curiosity about how video games are built behind the scenes. Right now, I am aiming toward
-        software engineering—taking things one step at a time and building my skills steadily without putting too much
-        pressure on myself.
-      </p>
+      <div class="split-content mt-20">
+        <div>
+          <h3>Why Computer Science?</h3>
+          <p>
+            After graduating from the STEM strand at St. Nicolas Golden Field Academy Inc. (2024–2026), I chose Computer
+            Science for two practical reasons: the strong career opportunities and high earning potential in the tech
+            industry, and my curiosity about how video games are built behind the scenes. Right now, I am aiming toward
+            software engineering—taking things one step at a time and building my skills steadily without putting too much
+            pressure on myself.
+          </p>
+        </div>
 
-      <h3>Interesting Facts About Me</h3>
-      <ul class="content-list">
-        <li>I earned certifications in C# programming (freeCodeCamp &amp; CodeChum) during my first year in college.</li>
-        <li>I coded and tested this entire personal website directly on my smartphone.</li>
-        <li>I jumped into C# programming logic—even building a Tic-Tac-Toe game—before ever learning HTML and CSS.</li>
-      </ul>
+        <div>
+          <h3>Interesting Facts About Me</h3>
+          <ul class="content-list">
+            <li>I earned certifications in C# programming (freeCodeCamp &amp; CodeChum) during my first year in college.</li>
+            <li>I coded and tested this entire personal website directly on my smartphone.</li>
+            <li>I jumped into C# programming logic—even building a Tic-Tac-Toe game—before ever learning HTML and CSS.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- SECTION 3: HOBBIES -->
+    <!-- // 5. Hobbies -->
     <section id="hobbies" class="container">
       <p class="section-tag">03 • Hobbies &amp; Interests</p>
       <h2>What I Enjoy Doing</h2>
       <p class="section-intro">How I spend my time outside of lectures and coding assignments.</p>
 
-      <div class="card-grid">
+      <div class="card-grid three-col">
         <div class="card">
           <h3>Coding &amp; Building Projects</h3>
           <p>Experimenting with C# logic, solving CodeChum challenges, and building web pages from scratch.</p>
@@ -158,7 +166,7 @@
       </div>
     </section>
 
-    <!-- SECTION 4: GALLERY -->
+    <!-- // 6. Gallery -->
     <section id="gallery" class="container">
       <p class="section-tag">04 • Photo Gallery</p>
       <h2>Captured Memories</h2>
@@ -177,7 +185,7 @@
       </div>
     </section>
 
-    <!-- SECTION 5: FAVORITES -->
+    <!-- // 7. Favorites -->
     <section id="favorites" class="container">
       <p class="section-tag">05 • Favorites</p>
       <h2>Things I Enjoy Most</h2>
@@ -228,31 +236,37 @@
       </div>
     </section>
 
-    <!-- SECTION 6: DREAMS & BUCKET LIST -->
+    <!-- // 8. Dreams & Bucket List -->
     <section id="dreams" class="container">
       <p class="section-tag">06 • Dreams &amp; Goals</p>
       <h2>My Dreams &amp; Bucket List</h2>
       <p class="section-intro">Where I am heading and what I hope to accomplish.</p>
 
-      <h3>Top 5 Bucket List Goals</h3>
-      <ol class="content-list">
-        <li><strong>Graduate in BSCS:</strong> Complete my Computer Science degree at LSPU SPCC with strong technical projects.</li>
-        <li><strong>Become a Software Developer:</strong> Build real-world applications, web technologies, and modern frameworks.</li>
-        <li><strong>Travel to Japan or Switzerland:</strong> Experience new cultures and architecture firsthand.</li>
-        <li><strong>Build a Full-Scale Game or App:</strong> Publish a software project used by thousands of people.</li>
-        <li><strong>Give Back to My Family:</strong> Achieve financial stability to support the people who supported my education.</li>
-      </ol>
-
-      <h3 class="mt-20">Skills I Want to Master Next</h3>
-      <div class="card-grid">
-        <div class="card">
-          <h3>Full-Stack Web Dev</h3>
-          <p>Expanding beyond HTML5 and CSS3 into JavaScript, databases, and backend APIs.</p>
+      <div class="split-content">
+        <div>
+          <h3>Top 5 Bucket List Goals</h3>
+          <ol class="content-list">
+            <li><strong>Graduate in BSCS:</strong> Complete my Computer Science degree at LSPU SPCC with strong technical projects.</li>
+            <li><strong>Become a Software Developer:</strong> Build real-world applications, web technologies, and modern frameworks.</li>
+            <li><strong>Travel to Japan or Switzerland:</strong> Experience new cultures and architecture firsthand.</li>
+            <li><strong>Build a Full-Scale Game or App:</strong> Publish a software project used by thousands of people.</li>
+            <li><strong>Give Back to My Family:</strong> Achieve financial stability to support the people who supported my education.</li>
+          </ol>
         </div>
 
-        <div class="card">
-          <h3>Advanced C# &amp; .NET</h3>
-          <p>Taking what I started in my ITEC 102 TicTacToe project to build desktop and web apps.</p>
+        <div>
+          <h3>Skills I Want to Master Next</h3>
+          <div class="card-grid one-col">
+            <div class="card">
+              <h3>Full-Stack Web Dev</h3>
+              <p>Expanding beyond HTML5 and CSS3 into JavaScript, databases, and backend APIs.</p>
+            </div>
+
+            <div class="card">
+              <h3>Advanced C# &amp; .NET</h3>
+              <p>Taking what I started in my ITEC 102 TicTacToe project to build desktop and web apps.</p>
+            </div>
+          </div>
         </div>
       </div>
 
@@ -261,43 +275,50 @@
       </div>
     </section>
 
-    <!-- SECTION 7: CONTACT -->
+    <!-- // 9. Contact -->
     <section id="contact" class="container">
       <p class="section-tag">07 • Contact</p>
       <h2>Get In Touch</h2>
       <p class="section-intro">Feel free to reach out through email or send a message using the form below.</p>
 
-      <ul class="profile-grid">
-        <li>
-          <strong>LSPU Institutional Email</strong>
-          <a href="mailto:0326-1493@lspu.edu.ph">0326-1493@lspu.edu.ph</a>
-        </li>
-        <li>
-          <strong>Personal Gmail</strong>
-          <a href="mailto:shelldoncabangal2nd@gmail.com">shelldoncabangal2nd@gmail.com</a>
-        </li>
-      </ul>
+      <div class="contact-layout">
+        <ul class="profile-grid one-col">
+          <li>
+            <strong>LSPU Institutional Email</strong>
+            <a href="mailto:0326-1493@lspu.edu.ph">0326-1493@lspu.edu.ph</a>
+          </li>
+          <li>
+            <strong>Personal Gmail</strong>
+            <a href="mailto:shelldoncabangal2nd@gmail.com">shelldoncabangal2nd@gmail.com</a>
+          </li>
+        </ul>
 
-      <form class="contact-form" action="mailto:shelldoncabangal2nd@gmail.com" method="post" enctype="text/plain">
-        <label for="name">Your Name</label>
-        <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+        <form class="contact-form" action="mailto:shelldoncabangal2nd@gmail.com" method="post" enctype="text/plain">
+          <div class="form-row">
+            <div>
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="Name" placeholder="Enter your name" required>
+            </div>
+            <div>
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="Email" placeholder="Enter your email address" required>
+            </div>
+          </div>
 
-        <label for="email">Your Email</label>
-        <input type="email" id="email" name="Email" placeholder="Enter your email address" required>
+          <label for="subject">Subject</label>
+          <input type="text" id="subject" name="Subject" placeholder="What is this about?" required>
 
-        <label for="subject">Subject</label>
-        <input type="text" id="subject" name="Subject" placeholder="What is this about?" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" rows="5" placeholder="Write your message here..." required></textarea>
 
-        <label for="message">Message</label>
-        <textarea id="message" name="Message" rows="5" placeholder="Write your message here..." required></textarea>
-
-        <button type="submit" class="button">Send Message</button>
-      </form>
+          <button type="submit" class="button">Send Message</button>
+        </form>
+      </div>
     </section>
 
   </main>
 
-  <!-- FOOTER -->
+  <!-- // 10. Footer -->
   <footer>
     <p>&copy; 2026 Shelldon Reygie B. Cabangal. All Rights Reserved.</p>
     <p class="footer-sub">ITEC 101 Final Project - LSPU SPCC</p>
@@ -305,5 +326,4 @@
   </footer>
 
 </body>
-      </html>
-  
+</html>
